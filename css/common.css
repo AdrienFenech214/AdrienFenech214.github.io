@@ -1,0 +1,472 @@
+:root{
+    --accent-color-r:38;
+    --accent-color-g:198;
+    --accent-color-b:218;
+    --accent-color-light-r:128;
+    --accent-color-light-g:222;
+    --accent-color-light-b:234;
+    --accent-color-dark-r:0;
+    --accent-color-dark-g:131;
+    --accent-color-dark-b:143;
+    --primary-color-r:38;
+    --primary-color-g:50;
+    --primary-color-b:56;
+    --gradient-color-1-r:172;
+    --gradient-color-1-g:172;
+    --gradient-color-1-b:172;
+    --gradient-color-2-r:172;
+    --gradient-color-2-g:172;
+    --gradient-color-2-b:172;
+
+    --dynamic-container-line-height: 65px;
+}
+
+/* COLUMNS FOR 20%*/
+.s5ths,
+.m5ths,
+.l5ths,
+.xl5ths {
+    margin-left: auto;
+    left: auto;
+    right: auto;
+}
+
+.row .col.s5ths {
+    width: 20%;
+}
+
+@media only screen and (min-width: 601px) {
+    .row .col.m5ths {
+        width: 20%;
+    }
+}
+
+@media only screen and (min-width: 993px) {
+    .row .col.l5ths {
+        width: 20%;
+    }
+}
+
+@media only screen and (min-width: 1201px) {
+    .row .col.xl5ths {
+        width: 20%;
+    }
+}
+
+/* SEARCHBAR */
+.dynamic-container .child {
+    line-height: var(--dynamic-container-line-height);
+    height: var(--dynamic-container-line-height);
+    border-top: 1px solid #757575;
+    -webkit-transition: background-color 300ms ease-out;
+    -ms-transition: background-color 300ms ease-out;
+    transition: background-color 300ms ease-out;
+    background-color: #fff;
+    margin-bottom: 0;
+    width: 100%;
+}
+
+.dynamic-container .child .sub-child {
+    line-height: var(--dynamic-container-line-height);
+    height: var(--dynamic-container-line-height);
+    border-top: 1px solid #757575;
+    background-color: #fff;
+}
+
+.dynamic-container .child p {
+    margin: 0;
+    /*font-weight: bold;
+    font-size: 1.3rem;*/
+    color: #757575;
+}
+
+.dynamic-container .child:hover {
+    background-color: #f6f6f6;
+}
+
+.dynamic-container .child:hover p {
+    color: #000;
+}
+
+.dynamic-container .child .img-wrapper {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+}
+
+.dynamic-container .child .img-wrapper img {
+    max-width: 50px;
+    max-height: 50px;
+    /*-webkit-filter: grayscale(75%); !* Safari 6.0 - 9.0 *!
+    filter: grayscale(75%);*/
+}
+
+/*.dynamic-container .child {
+    transition-duration: 2s;
+    border-right: 1em solid transparent;
+}
+.dynamic-container .child:hover {
+    background: #FFF;
+    border-right: 1em solid rgb(var(--accent-color-r), var(--accent-color-g), var(--accent-color-b));
+}*/
+
+.dynamic-container i {
+    margin-left: .5em;
+}
+.dynamic-container i, .dynamic-container p {
+    color: #757575
+}
+.dynamic-container p.title {
+    text-decoration: underline;
+}
+
+.dynamic-container .child:hover i {
+    color: rgb(var(--accent-color-r), var(--accent-color-g), var(--accent-color-b));
+} 
+.dynamic-container .child:hover p {
+    color: #000;
+}
+
+.dynamic-container .child:hover p.title {
+    color: rgb(var(--accent-color-r), var(--accent-color-g), var(--accent-color-b));
+}
+
+/*!* Change the white to any color ;) *!
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 0 transparent inset !important;
+}
+.input-field input:-webkit-autofill, .input-field textarea:-webkit-autofill, .input-field select:-webkit-autofill {
+    background-color: rgba(255, 255, 255, 0) !important;
+    background-image: none !important;
+    color: rgb(0, 0, 0) !important;
+}*/
+@-webkit-keyframes autofill {
+    to {
+        color: #000000;
+        background: transparent;
+    }
+}
+
+.input-field input:-webkit-autofill {
+    -webkit-animation-name: autofill;
+    -webkit-animation-fill-mode: both;
+}
+
+
+.collection .collection-item.active {
+    background-color: rgb(var(--accent-color-r), var(--accent-color-g), var(--accent-color-b));
+}
+
+.collection a.collection-item {
+    color: rgb(var(--accent-color-r), var(--accent-color-g), var(--accent-color-b));
+}
+
+.secondary-content {
+    color: rgb(var(--accent-color-r), var(--accent-color-g), var(--accent-color-b));
+}
+
+.progress .determinate {
+    background-color: rgb(var(--accent-color-r), var(--accent-color-g), var(--accent-color-b));
+}
+
+.progress .indeterminate {
+    background-color: rgb(var(--accent-color-r), var(--accent-color-g), var(--accent-color-b));
+}
+
+span.badge.new {
+    background-color: rgb(var(--accent-color-r), var(--accent-color-g), var(--accent-color-b));
+}
+
+.btn, .btn-large, .btn-small {
+    background-color: rgb(var(--accent-color-r), var(--accent-color-g), var(--accent-color-b));
+}
+
+.btn-floating {
+    background-color: rgb(var(--accent-color-r), var(--accent-color-g), var(--accent-color-b));
+}
+
+.btn-floating:hover {
+    background-color: rgb(var(--accent-color-r), var(--accent-color-g), var(--accent-color-b));
+}
+
+.btn:hover, .btn-large:hover, .btn-small:hover {
+    background-color: rgb(var(--accent-color-light-r), var(--accent-color-light-g), var(--accent-color-light-b));
+}
+
+.btn:focus, .btn-large:focus, .btn-small:focus,
+.btn-floating:focus {
+    background-color: rgb(var(--accent-color-dark-r), var(--accent-color-dark-g), var(--accent-color-dark-b));
+}
+
+.sidenav li > a.btn:hover, .sidenav li > a.btn-large:hover, .sidenav li > a.btn-small:hover, .sidenav li > a.btn-large:hover {
+    background-color: rgb(var(--accent-color-light-r), var(--accent-color-light-g), var(--accent-color-light-b));
+}
+
+.fixed-action-btn .fab-backdrop {
+    background-color: rgb(var(--accent-color-r), var(--accent-color-g), var(--accent-color-b));
+}
+
+.dropdown-content li > a, .dropdown-content li > span {
+    color: rgb(var(--accent-color-r), var(--accent-color-g), var(--accent-color-b));
+}
+
+.chip:focus {
+    background-color: rgb(var(--accent-color-r), var(--accent-color-g), var(--accent-color-b));
+}
+
+.chips.focus {
+    border-bottom: 1px solid rgb(var(--accent-color-r), var(--accent-color-g), var(--accent-color-b));
+    -webkit-box-shadow: 0 1px 0 0 rgb(var(--accent-color-r), var(--accent-color-g), var(--accent-color-b));
+    box-shadow: 0 1px 0 0 rgb(var(--accent-color-r), var(--accent-color-g), var(--accent-color-b));
+}
+input:not([type]):focus:not([readonly]),
+input[type=text]:not(.browser-default):focus:not([readonly]),
+input[type=password]:not(.browser-default):focus:not([readonly]),
+input[type=email]:not(.browser-default):focus:not([readonly]),
+input[type=url]:not(.browser-default):focus:not([readonly]),
+input[type=time]:not(.browser-default):focus:not([readonly]),
+input[type=date]:not(.browser-default):focus:not([readonly]),
+input[type=datetime]:not(.browser-default):focus:not([readonly]),
+input[type=datetime-local]:not(.browser-default):focus:not([readonly]),
+input[type=tel]:not(.browser-default):focus:not([readonly]),
+input[type=number]:not(.browser-default):focus:not([readonly]),
+input[type=search]:not(.browser-default):focus:not([readonly]),
+textarea.materialize-textarea:focus:not([readonly]) {
+    border-bottom: 1px solid rgb(var(--accent-color-r), var(--accent-color-g), var(--accent-color-b));
+    -webkit-box-shadow: 0 1px 0 0 rgb(var(--accent-color-r), var(--accent-color-g), var(--accent-color-b));
+    box-shadow: 0 1px 0 0 rgb(var(--accent-color-r), var(--accent-color-g), var(--accent-color-b));
+}
+
+input:not([type]):focus:not([readonly]) + label,
+input[type=text]:not(.browser-default):focus:not([readonly]) + label,
+input[type=password]:not(.browser-default):focus:not([readonly]) + label,
+input[type=email]:not(.browser-default):focus:not([readonly]) + label,
+input[type=url]:not(.browser-default):focus:not([readonly]) + label,
+input[type=time]:not(.browser-default):focus:not([readonly]) + label,
+input[type=date]:not(.browser-default):focus:not([readonly]) + label,
+input[type=datetime]:not(.browser-default):focus:not([readonly]) + label,
+input[type=datetime-local]:not(.browser-default):focus:not([readonly]) + label,
+input[type=tel]:not(.browser-default):focus:not([readonly]) + label,
+input[type=number]:not(.browser-default):focus:not([readonly]) + label,
+input[type=search]:not(.browser-default):focus:not([readonly]) + label,
+textarea.materialize-textarea:focus:not([readonly]) + label {
+    color: rgb(var(--accent-color-r), var(--accent-color-g), var(--accent-color-b));
+}
+
+.input-field .prefix.active {
+    color: rgb(var(--accent-color-r), var(--accent-color-g), var(--accent-color-b));
+}
+
+[type="radio"]:checked + span:after,
+[type="radio"].with-gap:checked + span:before,
+[type="radio"].with-gap:checked + span:after {
+    border: 2px solid rgb(var(--accent-color-r), var(--accent-color-g), var(--accent-color-b));
+}
+
+[type="radio"]:checked + span:after,
+[type="radio"].with-gap:checked + span:after {
+    background-color: rgb(var(--accent-color-r), var(--accent-color-g), var(--accent-color-b));
+}
+
+[type="checkbox"]:checked + span:not(.lever):before {
+    border-right: 2px solid rgb(var(--accent-color-r), var(--accent-color-g), var(--accent-color-b));
+    border-bottom: 2px solid rgb(var(--accent-color-r), var(--accent-color-g), var(--accent-color-b));
+}
+
+[type="checkbox"]:indeterminate + span:not(.lever):before {
+    border-right: 2px solid rgb(var(--accent-color-r), var(--accent-color-g), var(--accent-color-b));
+}
+
+[type="checkbox"].filled-in:checked + span:not(.lever):after {
+    border: 2px solid rgb(var(--accent-color-r), var(--accent-color-g), var(--accent-color-b));
+    background-color: rgb(var(--accent-color-r), var(--accent-color-g), var(--accent-color-b));
+}
+
+[type="checkbox"].filled-in.tabbed:checked:focus + span:not(.lever):after {
+    border-radius: 2px;
+    background-color: rgb(var(--accent-color-r), var(--accent-color-g), var(--accent-color-b));
+    border-color: rgb(var(--accent-color-r), var(--accent-color-g), var(--accent-color-b));
+}
+
+.switch label input[type=checkbox]:checked + .lever:after {
+    background-color: rgb(var(--accent-color-r), var(--accent-color-g), var(--accent-color-b));
+}
+
+.switch label input[type=checkbox]:checked + .lever {
+    background-color: rgb(var(--accent-color-light-r), var(--accent-color-light-g), var(--accent-color-light-b));
+}
+
+.select-wrapper input.select-dropdown:focus {
+    border-bottom: 1px solid rgb(var(--accent-color-r), var(--accent-color-g), var(--accent-color-b));
+}
+
+input[type=range] + .thumb {
+    background-color: rgb(var(--accent-color-r), var(--accent-color-g), var(--accent-color-b));
+}
+
+input[type=range] + .thumb .value {
+    color: rgb(var(--accent-color-r), var(--accent-color-g), var(--accent-color-b));
+}
+
+input[type=range]::-webkit-slider-thumb {
+    background: rgb(var(--accent-color-r), var(--accent-color-g), var(--accent-color-b));
+    background-color: rgb(var(--accent-color-r), var(--accent-color-g), var(--accent-color-b));
+}
+
+input[type=range]::-moz-range-thumb {
+    background: rgb(var(--accent-color-r), var(--accent-color-g), var(--accent-color-b));
+}
+
+input[type=range]::-ms-thumb {
+    background: rgb(var(--accent-color-r), var(--accent-color-g), var(--accent-color-b));
+}
+
+.sidenav li > a.btn-floating:hover {
+    background-color: rgb(var(--accent-color-r), var(--accent-color-g), var(--accent-color-b));
+}
+
+.spinner-layer {
+    border-color: rgb(var(--accent-color-r), var(--accent-color-g), var(--accent-color-b));
+}
+
+.datepicker-date-display {
+    background-color: rgb(var(--accent-color-r), var(--accent-color-g), var(--accent-color-b));
+}
+
+.datepicker-table td.is-today {
+    color: rgb(var(--accent-color-r), var(--accent-color-g), var(--accent-color-b));
+}
+
+.datepicker-table td.is-selected {
+    background-color: rgb(var(--accent-color-r), var(--accent-color-g), var(--accent-color-b));
+}
+
+.datepicker-cancel,
+.datepicker-clear,
+.datepicker-today,
+.datepicker-done {
+    color: rgb(var(--accent-color-r), var(--accent-color-g), var(--accent-color-b));
+}
+
+.timepicker-digital-display {
+    background-color: rgb(var(--accent-color-r), var(--accent-color-g), var(--accent-color-b));
+}
+
+.timepicker-canvas line {
+    stroke: rgb(var(--accent-color-r), var(--accent-color-g), var(--accent-color-b));
+}
+
+.timepicker-canvas-bearing {
+    fill: rgb(var(--accent-color-r), var(--accent-color-g), var(--accent-color-b));
+}
+
+.timepicker-canvas-bg {
+    fill: rgb(var(--accent-color-r), var(--accent-color-g), var(--accent-color-b));
+}
+
+.timepicker-close {
+    color: rgb(var(--accent-color-r), var(--accent-color-g), var(--accent-color-b));
+}
+
+blockquote {
+    border-left: 5px solid rgb(var(--primary-color-r), var(--primary-color-g), var(--primary-color-b));
+}
+
+.pagination li.active {
+    background-color: rgb(var(--primary-color-r), var(--primary-color-g), var(--primary-color-b));
+}
+
+.page-footer {
+    background-color: rgb(var(--primary-color-r), var(--primary-color-g), var(--primary-color-b));
+}
+
+nav {
+    background-color: rgb(var(--primary-color-r), var(--primary-color-g), var(--primary-color-b));
+}
+
+.tabs .tab a:hover, .tabs .tab a.active {
+    color: rgb(var(--primary-color-r), var(--primary-color-g), var(--primary-color-b));
+}
+
+.table-of-contents a:hover {
+    border-left: 1px solid rgb(var(--primary-color-r), var(--primary-color-g), var(--primary-color-b));
+}
+
+.table-of-contents a.active {
+    border-left: 2px solid rgb(var(--primary-color-r), var(--primary-color-g), var(--primary-color-b));
+}
+
+.sidenav .collapsible-body > ul:not(.collapsible) > li.active,
+.sidenav.sidenav-fixed .collapsible-body > ul:not(.collapsible) > li.active {
+    background-color: rgb(var(--primary-color-r), var(--primary-color-g), var(--primary-color-b));
+}
+
+.tap-target {
+    background-color: rgb(var(--primary-color-r), var(--primary-color-g), var(--primary-color-b));
+}
+
+.switch label .lever:before {
+    background-color: rgba(var(--accent-color-r), var(--accent-color-g), var(--accent-color-b), 0.15);
+}
+
+input[type=checkbox]:checked:not(:disabled) ~ .lever:active::before,
+input[type=checkbox]:checked:not(:disabled).tabbed:focus ~ .lever::before {
+    background-color: rgba(var(--accent-color-r), var(--accent-color-g), var(--accent-color-b), 0.15);
+}
+
+.keyboard-focused input[type=range]:focus:not(.active)::-webkit-slider-thumb {
+    -webkit-box-shadow: 0 0 0 10px rgba(var(--accent-color-r), var(--accent-color-g), var(--accent-color-b), 0.26);
+    box-shadow: 0 0 0 10px rgba(var(--accent-color-r), var(--accent-color-g), var(--accent-color-b), 0.26);
+}
+
+.keyboard-focused input[type=range]:focus:not(.active)::-moz-range-thumb {
+    box-shadow: 0 0 0 10px rgba(var(--accent-color-r), var(--accent-color-g), var(--accent-color-b), 0.26);
+}
+
+.keyboard-focused input[type=range]:focus:not(.active)::-ms-thumb {
+    box-shadow: 0 0 0 10px rgba(var(--accent-color-r), var(--accent-color-g), var(--accent-color-b), 0.26);
+}
+
+.timepicker-tick.active,
+.timepicker-tick:hover {
+    background-color: rgba(var(--accent-color-r), var(--accent-color-g), var(--accent-color-b), 0.25);
+}
+
+.tabs .tab a {
+    color: rgba(var(--primary-color-r), var(--primary-color-g), var(--accent-color-b), 0.7);
+}
+
+.tabs .tab.disabled a,
+.tabs .tab.disabled a:hover {
+    color: rgba(var(--primary-color-r), var(--primary-color-g), var(--primary-color-b), 0.4);
+}
+
+.card .card-action a:not(.btn):not(.btn-large):not(.btn-small):not(.btn-large):not(.btn-floating) {
+    color: rgba(var(--primary-color-r), var(--primary-color-g), var(--primary-color-b));
+}
+
+.card .card-action a:not(.btn):not(.btn-large):not(.btn-small):not(.btn-large):not(.btn-floating):hover {
+    color: rgba(var(--accent-color-light-r), var(--accent-color-light-g), var(--accent-color-light-b));
+}
+
+.toast .toast-action {
+    color: rgba(var(--accent-color-r), var(--accent-color-g), var(--accent-color-b));
+}
+
+.progress {
+    background-color: rgb(var(--accent-color-light-r), var(--accent-color-light-g), var(--accent-color-light-b));
+}
+
+.datepicker-day-button:focus {
+    background-color: rgba(var(--accent-color-r), var(--accent-color-g), var(--accent-color-b), 0.25);
+}
+
+.tabs .indicator {
+    background-color: rgba(var(--primary-color-r), var(--primary-color-g), var(--primary-color-b));
+}
+
+.trunc {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap
+}

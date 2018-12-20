@@ -1,0 +1,85 @@
+.ntfy-panel > div {
+    width: 100%;
+}
+
+.ntfy-panel {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 10px;
+}
+
+.ntfy-panel i.material-icons {
+    font-size: 2rem;
+    color: #eee;
+    -webkit-transition: color .15s ease-in;
+    -moz-transition: color .15s ease-in;
+    -o-transition: color .15s ease-in;
+    transition: color .15s ease-in;
+}
+
+.ntfy-panel:hover i.material-icons {
+    color: #fff;
+}
+
+.ntfy-panel.error:hover i.material-icons {
+    color: #ef5350;
+}
+
+.ntfy-panel  a.ntfy-cancel {
+    position: relative;
+    float: right;
+    right: 10px;
+    top: 5px;
+    cursor: pointer;
+}
+
+.ntfy-panel  a.ntfy-cancel i.material-icons {
+    -webkit-transition: color .15s ease-in;
+    -moz-transition: color .15s ease-in;
+    -o-transition: color .15s ease-in;
+    transition: color .15s ease-in;
+    color: #ccc;
+}
+
+.ntfy-panel  a.ntfy-cancel:hover i.material-icons {
+    cursor: pointer;
+    color: #fff;
+}
+
+.ntfy-panel  a.ntfy-cancel i.material-icons {
+    font-size: 1.25rem;
+}
+
+.ntfy-panel span.title {
+    color: #eee;
+    -webkit-transition: color .15s ease-in;
+    -moz-transition: color .15s ease-in;
+    -o-transition: color .15s ease-in;
+    transition: color .15s ease-in;
+    font-size: 1rem;
+    padding: 2px 10px;
+}
+
+.ntfy-panel:hover span.title {
+    color: #fff;
+}
+
+.ntfy-panel .text {
+    display: block;
+    color: #ccc;
+    font-size: 0.9rem;
+    padding: 2px 10px;
+}
+
+.ntfy-panel .options {
+    margin: 4px;
+}
+
+@media only screen and (min-width: 601px) {
+    .ntfy-panel {
+        max-width: 450px;
+    }
+    .ntfy-panel .text {
+        max-width: 350px;
+    }
+}

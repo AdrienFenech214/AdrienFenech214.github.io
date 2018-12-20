@@ -1,0 +1,53 @@
+.logo {
+    border-radius: 50%;
+    border: 5px solid dimgrey;
+    width: 100%;
+    height: auto;
+    max-width: 250px;
+}
+
+@media only screen and (max-width: 600px) {
+    .logo {
+        max-width: 40vw;
+    }
+}
+
+.portrait {
+    border-radius: 50%;
+    border: 4px solid dimgrey;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.question {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 2%;
+    text-align: center;
+}
+
+.answer {
+    margin-top: 2%;
+    margin-bottom: 4%;
+    font-size: 1em;
+    text-align: left;
+}
+
+blockquote {
+    border-left-color: rgb(var(--accent-color-r), var(--accent-color-g), var(--accent-color-b));
+}
+
+.logo-social:hover {
+    border: 3px solid rgb(var(--accent-color-r), var(--accent-color-g), var(--accent-color-b));
+    padding: 0;
+}
+
+.card {
+    max-width: 350px;
+    height: auto;
+}
+
+.card .btn {
+    font-size: 1.5em;
+}

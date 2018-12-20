@@ -1,0 +1,32 @@
+.tabs .tab a{
+    color: #000000;
+}
+
+.tabs .tab a:focus, .tabs .tab a:focus.active {
+    background-color: transparent;
+    outline: none;
+}
+.tabs .tab a:hover,tabs .tab a:active,.tabs .tab a.active {
+    background-color: transparent;
+    color: #000000;
+}
+.tabs .tab.disabled a,.tabs .tab.disabled a:hover {
+    color: transparent;
+}
+.tabs .indicator {
+    background-color: rgb(38, 198, 218);
+}
+
+.stick{
+    display: flex;
+    margin-top: 3.5%;
+}
+
+.stick span {
+    margin-left: 1%;
+}
+
+.button_border {
+    padding: 0.5% 2% 0.5% 2%;
+    font-size: xx-large;
+}

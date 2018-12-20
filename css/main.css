@@ -1,0 +1,210 @@
+.mainhead {
+    background: #00A8CC;
+    background-image: linear-gradient(to right, #00a8a4, #00a9af, #00a9ba, #00a9c4, #00a8cc);
+    min-height: 100vh;
+    min-height: -webkit-calc(100vh - 56px) !important;
+    min-height: -moz-calc(100vh - 56px) !important;
+    min-height: calc(100vh - 56px) !important;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+@media only screen and (min-width: 601px) {
+    .mainhead p.flow-text {
+        max-width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.number {
+    margin: 0;
+    font-weight: bold;
+    font-size: 2em;
+    color: #B2EBF2;
+    text-align: center;
+}
+.number-caption {
+    margin: 0;
+    font-weight: 300;
+    font-size: 1em;
+    color: #B2EBF2;
+    text-align: center;
+}
+
+.mainhead-content {
+    position: relative;
+    z-index: 10;
+}
+
+.mainhead-data {
+    position: absolute;
+    margin-bottom: 8%;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+    z-index: 2;
+}
+
+.mainhead-background {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: url(../img/main.iceberg.png) no-repeat;
+    background-size: auto 150%;
+    background-position: 50% 30%;
+    opacity: .8;
+    transition-duration: .2s;
+}
+
+.mainhead .separator {
+    position: absolute;
+    left: -1%;
+    right: -1%;
+    bottom: -2%;
+    /*border: 10px solid yellow;*/
+}
+
+/*
+    RESPONSIVE FIX
+*/
+@media (max-height:690px){
+   .mainhead-data{ display: none; }
+}
+
+.ranking h2 span {
+    display: inline-block;
+    border-bottom: 4px solid rgb(var(--accent-color-r), var(--accent-color-g), var(--accent-color-b));
+}
+
+.ranking .badge {
+    margin-right: .25em;
+    margin-bottom: .25em;
+}
+
+.ranking img {
+    width: 6rem;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+}
+.ranking img:hover {
+    -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(0%);
+}
+
+.ranking tbody tr:hover {
+    cursor: pointer;
+}
+
+.ranking tbody tr:hover img {
+    -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(0%);   
+}
+
+.customerType {
+}
+
+.customerType p {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.customerType .card-panel {
+    cursor: pointer;
+}
+
+.offer {
+    /*padding-top: 2rem;
+    padding-bottom: 2rem;*/
+}
+
+.pricing {
+    /*padding-top: 4rem; 
+    padding-bottom: 2rem;*/
+}
+.pricing .package {
+    font-size: 1.2em;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.pricing .price {
+    font-size: 1.2em;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+.pricing .price sub{
+    font-size: 0.5em;
+} 
+.pricing ul li {
+    font-size:.8em;
+    margin-top: .5em;
+    margin-bottom: .5em;
+}
+
+/*
+PARTNERS
+*/
+#partners img {
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+}
+#partners .logo-wrapper:hover img {
+    -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(0%);
+}
+
+.marquee {
+    position: relative;
+    height: 350px;
+    overflow: hidden;
+}
+
+.marquee > div {
+    display: block;
+    position: absolute;
+    z-index: 999;
+    transition-duration: .2s;
+    animation: marquee 11s linear infinite;
+    height: auto;
+}
+
+.marquee .row {
+    height: 150px;
+    width: 100%;
+}
+
+@keyframes marquee {
+  0% { top: 0; }
+  100% { top: -305%; }
+}
+
+@media only screen and (min-width: 601px) {
+    @keyframes marquee {
+        0% { top: 0; }
+        100% { top: -203.5%; }
+    }
+}
+
+@media only screen and (min-width: 993px) {
+    @keyframes marquee {
+        0% { top: 0; }
+        100% { top: -152.5%; }
+    }
+}
+
+.logo-part {
+    width: auto;
+    height: auto;
+    max-width: 150px;
+    max-height: 100px;
+}
+.logo-wrapper {
+    line-height: 20vh;
+    height: 20vh;
+}

@@ -1,0 +1,145 @@
+/* stylesheet for margins */
+
+/* TINY MARGIN (1%) */
+.t-margin-left {
+    margin-left: 1%;
+}
+
+.t-margin-right {
+    margin-right: 1%;
+}
+
+.t-margin-top {
+    margin-top: 1%;
+}
+
+.t-margin-bottom {
+    margin-bottom: 1%;
+}
+
+.t-margin {
+    margin: 1%;
+}
+
+/* SMALL MARGIN (3%) */
+.s-margin-left {
+    margin-left: 3%;
+}
+
+.s-margin-right {
+    margin-right: 3%;
+}
+
+.s-margin-top {
+    margin-top: 3%;
+}
+
+.s-margin-bottom {
+    margin-bottom: 3%;
+}
+
+.s-margin {
+    margin: 3%;
+}
+
+/* MEDIUM MARGIN (5%) */
+.m-margin-left {
+    margin-left: 5%;
+}
+
+.m-margin-right {
+    margin-right: 5%;
+}
+
+.m-margin-top {
+    margin-top: 5%;
+}
+
+.m-margin-bottom {
+    margin-bottom: 5%;
+}
+
+.m-margin {
+    margin: 5%;
+}
+
+/* LARGE MARGIN (10%) */
+.l-margin-left {
+    margin-left: 10%;
+}
+
+.l-margin-right {
+    margin-right: 10%;
+}
+
+.l-margin-top {
+    margin-top: 10%;
+}
+
+.l-margin-bottom {
+    margin-bottom: 10%;
+}
+
+.l-margin {
+    margin: 10%;
+}
+
+/* EXTRA LARGE MARGIN (15%) */
+.xl-margin-left {
+    margin-left: 15%;
+}
+
+.xl-margin-right {
+    margin-right: 15%;
+}
+
+.xl-margin-top {
+    margin-top: 15%;
+}
+
+.xl-margin-bottom {
+    margin-bottom: 15%;
+}
+
+.xl-margin {
+    margin: 15%;
+}
+
+/*
+    CUSTOM white space
+*/
+
+.container-m {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.container-m-top {
+    margin-top: 2rem;
+}
+.container-p {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+.container-p-top {
+    padding-top: 2rem;
+}
+.container-p-side {
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+.container-padding-bottom {
+    padding-bottom: 2rem;
+}
+.container-padding-top {
+    padding-top: 2rem;
+}
+.reset-margin {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.no-margin {
+    margin: 0 !important;
+}
+.no-padding {
+    margin: 0 !important;
+}

@@ -1,0 +1,38 @@
+.card-image {
+    border-radius: 50%;
+    height: auto;
+    width: 250px;
+    object-fit: cover;
+}
+
+.row .col.card {
+    max-width: 350px;
+    min-height: 470px;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+#secondblock {
+    min-height: 472.5px;
+}
+
+#secondblock a {
+    transition: transform 2s;
+}
+
+.truncated {
+    max-height: 108px;
+    overflow: hidden;
+}
+
+.filter-btn {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+.filter-btn button:focus, .filter-btn button:hover {
+    cursor: pointer;
+    background-color: white;
+    color: rgb(var(--accent-color-r), var(--accent-color-g), var(--accent-color-b));
+}

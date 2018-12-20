@@ -1,0 +1,229 @@
+/* GIRD */
+body,html {
+    height: 100%;
+    width: 100%;
+}
+html {
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+*::selection {
+    background: #00ACC1;
+    color: #FFF;
+}
+
+/* TYPOGRAPHY */
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+@media only screen and (min-width: 0) {
+    h1 { font-size: 2.4rem; }
+    h2 { font-size: 2rem; }
+}
+
+@media only screen and (min-width: 992px) {
+    h1 { font-size: 2.8rem; }
+    h2 { font-size: 2.4rem; }
+}
+
+@media only screen and (min-width: 1200px) {
+    h1 { font-size: 4rem; }
+}
+
+.light-text {
+    font-weight: 100;
+}
+
+h2 span.light { display: block; opacity: .6; }
+
+p.flow-text > strong { font-weight: bold !important; }
+
+ol {
+    list-style-position: outside;
+}
+
+/* Change the white to any color ;) */
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 30px white inset !important;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 .75rem;
+  width: auto;
+  max-width: 1440px;
+}
+
+.wrapper {
+    max-width: 960px; 
+    margin: 0 auto;
+}
+
+@media only screen and (min-width: 601px) {
+  .container {
+    /*width: 85%;*/
+      width: auto;
+      padding: 0 2rem;
+  }
+}
+
+@media only screen and (min-width: 993px) {
+  .container {
+    /*width: 70%;*/
+    width: auto;
+    padding: 0 4rem;
+  }
+}
+
+/* FIX VALIGN */
+@media only screen and (max-width: 600px) { .row.valign-wrapper { display: inherit; } }
+
+
+/* NAVBAR */
+nav .sidenav-trigger {
+    margin: 0px;
+}
+
+footer {
+    background: #ECEFF1;
+    padding: 4rem 0;
+}
+
+footer .row {
+    margin-bottom: 0px;
+}
+
+footer p {
+    color: #757575;
+    display: inline;
+    text-transform: uppercase;
+    padding-bottom: .5em;
+    margin-bottom: .5em;
+    border-bottom: 4px solid #CFD8DC;
+}
+footer a {
+    color: #000;
+    transition-duration: .2s;
+}
+footer a:hover {
+    text-decoration: underline;
+}
+
+nav.white a:not(.btn) {
+    color: rgb(var(--accent-color-r), var(--accent-color-g), var(--accent-color-b));
+}
+
+nav.transparent a:not(.btn) {
+    color: #FFF;
+}
+
+#btnChooseLanguage {
+    margin: 0px;
+    padding: 0px;
+    padding-left: .25rem;
+    padding-right: .25rem;
+}
+#btnChooseLanguage i.material-icons.left {
+    margin-right: .25rem;
+} 
+#btnChooseLanguage i.material-icons.right {
+    margin-left: .25rem;
+} 
+
+#btnChooseOffer i.material-icons.right {
+    margin-left: .25rem;
+}
+
+/*
+UI
+*/
+.gradient {
+    background-image: linear-gradient(to right, #00a8a4, #00a9af, #00a9ba, #00a9c4, #00a8cc);
+    color: #FFF;
+}
+.gradient hr {
+    border:none;
+    height: 1px;
+    background-color: #FFF;
+    color: #FFF;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: .5;
+}
+
+/*
+FORMS
+*/
+#fastSignup .select-wrapper input {
+    color: #FFF !important;
+}
+#fastSignup svg {
+    fill: #FFF !important;
+}
+
+/*
+    Startup, Incubator, Investor, Bank
+*/
+.startup h2, .startup a {
+    color: #E65100
+}
+
+.incubator h2, .incubator a {
+    color: #F1C11C;
+}
+
+.investor h2, .investor a {
+    color: #2FA53A;
+}
+.bank h2, .bank a {
+    color: #26A69A;
+}
+
+.startup a, .incubator a, .investor a, .bank a {
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+.center-div {
+    display: flex;
+    justify-content: center;
+}
+
+.center-simple {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*transparent button with round border*/
+.button_border {
+    padding: 5%;
+    border: 2px solid white;
+    border-radius: 40px;
+    background: transparent;
+    color: white;
+    letter-spacing: 1px;
+    margin-right: auto;
+    margin-left: auto;
+    transition: background 0.1s linear;
+}
+
+.button_border:hover {
+    background: white;
+    color: rgb(var(--accent-color-r), var(--accent-color-g), var(--accent-color-b));
+}
+
+.capitalize {
+    text-transform: capitalize;
+}
+
+.logo-social {
+    height: 48px;
+    width: 48px;
+    padding: 3px;
+    border-radius: 50%;
+}

@@ -1,0 +1,33 @@
+.background {
+    max-height: 700px;
+    object-fit: cover;
+    object-position: 75% 25%;
+    width: 100%;
+}
+
+.card .card-image img.card-img {
+    margin-top: 5%;
+    border-radius: 50%;
+    height: auto;
+    width: 50%;
+}
+
+.row .col.card {
+    max-width: 300px;
+    min-height: 320px;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.over {
+    transform: translateY(-100px);
+}
+
+.block {
+    position: relative;
+}
+
+.button_border {
+    padding: 0.5% 2% 0.5% 2%;
+    font-size: xx-large;
+}
